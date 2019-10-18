@@ -2,9 +2,7 @@
 	"use strict";
 
 	$(window).on('load', function() {
-	    $(".preloader").fadeOut("slow", function() {
-	        $(".preloader-left").addClass("slide-left");
-	    });
+	   
 
 	    $('#lionhero').owlCarousel({
 	        animateOut: 'fadeOut',
@@ -158,7 +156,7 @@
 
 	$('.menu-block, .menu-item, #close').on('click', function() {
 	    $('.content-blocks').animate({ scrollTop: 0 }, 800);
-	});	
+	});
 
 	//Function for 'Index-Menu2.html'
 	$('#home').on('click', function() {
@@ -179,7 +177,7 @@
 	        zoom: 11,
 
 	        // The latitude and longitude to center the map (always required)
-	        center: new google.maps.LatLng(40.6700, -73.9400), 
+	        center: new google.maps.LatLng(40.6700, -73.9400),
 
 	        scrollwheel: false,
 
