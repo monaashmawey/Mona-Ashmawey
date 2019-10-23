@@ -13,7 +13,7 @@
 /*------------------------------------------------------------------
 
     [Table of contents]
-    
+
     0. General Styles
     1. Preloader
     2. Home Styles
@@ -761,10 +761,10 @@ h2.menu-item:after {
 }
 
 .sidebar-menu {
-    background: #111; 
+    background: #111;
     height: 100%;
     left: 0;
-    position: fixed; 
+    position: fixed;
     width: 20%;
 }
 
@@ -1039,8 +1039,8 @@ h2.menu-item:after {
 
 .about-block {
     position: absolute;
-    width: 430px;
-    height: 300px;
+    width: 520px;
+    height: 372px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     display: table;
     transition: all 0.5s;
@@ -2212,14 +2212,14 @@ h4.package {
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
         left: 382px;
-        top: -151px;
+        top: -199px;
     }
     .portfolio-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
         transform: rotate(-34deg);
-        left: 577px;
-        top: 89px;
+        left: 605px;
+        top: 131px;
     }
     .blog-block {
         -ms-transform: rotate(-34deg);
@@ -2784,16 +2784,16 @@ h4.package {
 -------------------------------------------------------------------*/
 
 .buy-now {
-    background-color: #82B441;  
-    color: #FFF; 
-    display: block; 
-    font-size: 13px; 
-    font-weight: 500; 
+    background-color: #82B441;
+    color: #FFF;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
     left: 50px;
     letter-spacing: 1.5px;
-    padding: 3px 15px; 
+    padding: 3px 15px;
     position: absolute;
-    top: 20px; 
+    top: 20px;
     z-index: 999
 }
 .buy-now:hover {
