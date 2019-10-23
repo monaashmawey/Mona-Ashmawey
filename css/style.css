@@ -623,7 +623,7 @@ h2.blog.menu-item:before {
 }
 
 h2.contact.menu-item:before {
-    content: '04';
+    content: '03';
 }
 
 .menu-block:hover h2.menu-item:before {
