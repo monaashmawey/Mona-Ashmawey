@@ -2433,6 +2433,12 @@ h4.package {
         background: url(../images/bg.html) #333 30% 30%;
         overflow-y: scroll;
     }
+    .home.img-bg{
+    background-position: 74px -4px !important;
+    background-size: 130% !important;
+    background-repeat: no-repeat !important;
+    background-color: #000 !important;
+    }
     .name-block,
     .about-block,
     .portfolio-block,
@@ -2627,6 +2633,10 @@ h4.package {
 @media (max-width:767px) {
     .home {
         overflow-y: scroll;
+        background-position: 74px -4px !important;
+        background-size: 130% !important;
+        background-repeat: no-repeat !important;
+        background-color: #000 !important;
     }
     .home .bgScroll {
         animation: none;
@@ -2743,6 +2753,10 @@ h4.package {
 @media (max-width:375px) {
 	.home {
 		position: relative;
+    background-position: 74px -4px !important;
+    background-size: 130% !important;
+    background-repeat: no-repeat !important;
+    background-color: #000 !important;
     }
     .menu4 .home {
         height: 100vh;
