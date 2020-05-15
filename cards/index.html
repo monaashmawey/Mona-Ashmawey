@@ -19,6 +19,7 @@
 	<style type="text/css">
 		.text-name{
 			margin-bottom: 30px;
+			margin-top: 50px;
 		}
 		.text-name label{
 			display: block;
@@ -49,13 +50,14 @@
         	font-weight:bold;
         	height:400px;
         	width:auto;
-        	border: 1px solid #c33f52;;
+        	border: 1px solid #c33f52;
         }
         .box{
           box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
           padding: 50px 10px;
           border-radius: 30px;
         }
+
 	</style>
 	<title>بطاقة تهنئة</title>
 
@@ -70,10 +72,10 @@
 				<div class="text-center text-name">
 					<label class="control-label">أدخل اسمك:</label>
 					<input type="text" class="form-control" name="name-input" id="name-input"><br><br>
-          <label class="control-label">اختر لون الخط :</label>
+          <!-- <label class="control-label">اختر لون الخط :</label>
 					<input type="color" class="form-control" placeholder="اختر اللون" name="color" id="color" value="#c0c0c0"><br><br>
           <label class="control-label">اختر حجم الخط : </label>
-					<input type="number" class="form-control" placeholder="اختر الحجم" name="font_size" id="font_size" value="70"><br>
+					<input type="number" class="form-control" placeholder="اختر الحجم" name="font_size" id="font_size" value="70"><br> -->
 				</div>
 
 
@@ -81,12 +83,12 @@
 
 
 				<div class="text-center">
-					 <div style="text-align:center">
+					 <!-- <div style="text-align:center">
 					  <button class="btn btn-dark" onclick="javascript: movetext('right');"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 					  <button class="btn btn-dark" onclick="javascript: movetext('left');"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
 					  <button class="btn btn-dark" onclick="javascript: movetext('up');"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 					  <button class="btn btn-dark" onclick="javascript: movetext('down');"><i class="fa fa-arrow-down" aria-hidden="true"></i></button>
-					</div>
+					</div> -->
           <p class="text-center mt-4">
   					<a class="btn btn-dark" id="download_btn" style="color: #fff;">تحميل البطاقة</a>
   				</p>
@@ -95,7 +97,7 @@
       </div>
 
 			     <div class="col-md-4 box col-12 text-center">
-			     	<img id="card-image" src="img.jpg" style="display: none">
+			     	<img id="card-image" src="img.gif" style="display: none">
 			     	<canvas id="canvas" width="1024" height="1024">
 
 
@@ -121,7 +123,7 @@ window.onload = function()
 	canvas.height = $('#card-image').height();
 	//canvas.crossOrigin = "Anonymous";
 	context.drawImage($('#card-image').get(0), 0, 0);
-	var size_template = "bold Xpx Tajawal";
+	var size_template = "bold 50px Tajawal";
 	context.font = size_template.replace("Xpx", $("#font_size").val() + "px");
 	var value = '';
 
@@ -129,20 +131,22 @@ window.onload = function()
 
 	$(document).on('input','#name-input', function()
 	{
-		var x_a = $("#x_axis").val();
-		var y_a = $("#y_axis").val();
+		// var x_a = $("#x_axis").val();
+		// var y_a = $("#y_axis").val();
+		var x_a =460;
+		var y_a=920;
 
 		console.log($(this).val());
 		context.clearRect(0, 0, ((canvas.width/2)),((canvas.height/2)));
 		context.drawImage($('img').get(0), 0, 0);
-		context.fillStyle = $("#color").val();
+		context.fillStyle = "white";
 		context.fillText($(this).val(), x_a, y_a);
 		value = $(this).val();
 	});
 	function downloadCanvas(link, canvasId, filename)
 	{
 		var image = new Image();
-		image.src = document.getElementById(canvasId).toDataURL("image/png");
+		image.src = document.getElementById(canvasId).toDataURL("image/gif");
 		var ua = navigator.userAgent.toLowerCase();
 		if (ua.indexOf('safari') != -1) {
 		  if (ua.indexOf('chrome') > -1) {
